@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../Partials/header.ejs')%>
+</head>
+<body>
+    <%- include('../Partials/nav.ejs') %>
+    <div class="add-employee">
+        <form> 
+            <label for="first-name"> First Name: </label>
+            <input type="text" id =  "first-name" required>
+            <label for="last-name"> Last Name: </label>
+            <input type="text" id="last-name" required>
+            <label for="email"> Emailid: </label>
+            <input type="email" id =  "email" required>
+            <label for="password"> Password: </label>
+            <input type="text" id =  "password" required>
+            <label for="department"> Department:</label>
+            <select id="department" name="departments" required>
+                <option value="accounting">Accounting</option>
+                <option value="legal">Legal </option>
+                <option value="marketing">Marketing</option>
+                <option value="r&d">R%D </option>
+                <option value="human resources">Human Resources</option>
+                <option value="operations">Operations</option>
+                <option value="sales">Sales</option>
+                <option value="engineeringg">Engineering</option>
+                <option value="pmo">Project Management Office</option>
+            </select>
+            <button> Submit</button>
+            
+    
+        </form>
+
+</div>
+
+<%- include('../Partials/footer.ejs') %>
+</body>
+</html>

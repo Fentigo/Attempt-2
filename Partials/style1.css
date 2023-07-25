@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;600&display=swap);
+body {
+    color: whitesmoke;
+    font-family: 'Frank Ruhl Libre', serif;
+    max-width: 900px;
+    margin: 20px auto;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,38,100,1) 35%, rgba(177,21,153,1) 100%);
+    height:100vh;
+}
+.site_title{
+    display: flex;
+}
+p,  h2, h3, a, ul{
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    color: whitesmoke
+
+}
+.sidebar {
+    position: fixed;
+    width: 250px;
+    background-color: rgba(61,38,100,1);
+    
+}
+.toggle-btn {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+.content {
+    top: 100px;
+    padding: 20px;
+    width:100px;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.search-input{
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: auto; 
+    margin-left: auto;
+    width: 150px;
+}
+.search-btn{
+    padding:8px;
+    background-color:whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+.message-icons i, .notification-icons i {
+    position: absolute;
+    margin-right: 100px;
+  }
+  .notification-icons i {
+    position: absolute;
+    margin-left: 80px
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-gap: 10px;
+    height: 500px; /* Adjust the height as needed */
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CDB5DD;
+    text-transform: uppercase;
+    color: whitesmoke;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+nav li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+nav h1{
+    font-size: 3em;
+}
+nav p, nav a{
+    color: whitesmoke;
+    font-weight:300;
+}
+.registerform{
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    padding: 20px;
+    width:80%;
+    max-width: 600px;
+    font-family: 'Frank Ruhl Libre', serif;
+    left      : 50%;
+    top       : 60%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+    
+    
+}
+
+footer{
+    position: absolute;
+    left:0px;
+    top: 900px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}

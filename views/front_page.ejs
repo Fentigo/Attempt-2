@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../Partials/header.ejs') %>
+    <%- include('../Partials/nav.ejs') %>
+
+</head>
+<body>
+    
+    <div class="registerform">
+        
+        <form> 
+            <h2> Register</h2>
+        <br>
+            <input type="text" id = "first-name" required>
+            <label for="first-name"> First Name: </label>
+            <br>
+            <input type="text" id="last-name" required>
+            <label for="last-name"> Last Name: </label>
+            <br>
+            <input type="email" id =  "email" required>
+            <label for="email"> Emailid: </label>
+            <br>
+            <input type="text" id =  "password" required>
+            <label for="password"> Password: </label>
+            <br>
+            <select id="department" name="departments" required>
+                <option value="accounting">Accounting</option>
+                <option value="legal">Legal </option>
+                <option value="marketing">Marketing</option>
+                <option value="r&d">R%D </option>
+                <option value="human resources">Human Resources</option>
+                <option value="operations">Operations</option>
+                <option value="sales">Sales</option>
+                <option value="engineeringg">Engineering</option>
+                <option value="pmo">Project Management Office</option>
+            </select>
+            <label for="department"> Department:</label>
+            <br>
+            <button> Register</button>
+            
+    
+        </form>
+    
+    
+    <%- include('../Partials/footer.ejs') %>
+</body>
+</html>
